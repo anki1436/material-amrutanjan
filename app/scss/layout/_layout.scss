@@ -1,0 +1,36 @@
+//navbar
+.nav-wrapper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    .right {
+        // font-family: $primary-font;
+        display: flex;
+        align-items: center;
+    }
+    li {
+        display: flex;
+        cursor: pointer;
+        a {
+            font-size: 1.7rem;
+            line-height: 1.7;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+           i,
+            .material-icon {
+                height: unset;
+                display: inline-flex;
+                line-height: unset;
+                align-items: center;
+                justify-content: center;
+            }
+            i{
+                font-size: 19px;
+                line-height: 1;
+            }
+        }      
+    }
+}

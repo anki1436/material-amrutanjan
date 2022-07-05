@@ -1,0 +1,77 @@
+nav {
+    line-height: 1;
+    height: 81.2px !important;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(88, 152, 49, 0.5);
+    .container {
+        height: 100%;
+    }
+    .brand-logo {
+        height: 120px;
+        aspect-ratio: 1/1;
+        border-radius: 100%;
+        background-color: rgba(88, 152, 49, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 1.75rem;
+        left: 0;
+        @include breakpoint(ipad-land){
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        img {
+            height: 120px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            object-fit: contain;
+                }
+    }
+}
+
+.banner {
+    height: 100vh;
+    min-height: 670px;
+    background-image: url('#{$image-path}/banner-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 2.5rem;
+
+    h1{
+        font-size: 6.44rem;
+        line-height: 1.111;
+        width: 16ch;
+        text-align: center;
+        color: $white-color;
+        font-weight: 500;
+        position: relative;
+        transform: translateY(-5rem);
+    }
+    .social{
+        position: absolute;
+        bottom: 1.68rem;
+        right: 0;
+        display: flex;
+        align-items: center;
+        gap: 3.5rem;
+        hr{
+            width: 13.5rem;
+            height: 0.2rem;
+            color: $black-color;
+            background: $black-color;
+            border: none;
+        }
+        a,i{
+            font-size:1.3rem;
+            
+        }
+    }
+}

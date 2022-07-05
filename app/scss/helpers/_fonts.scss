@@ -1,0 +1,96 @@
+@font-face {
+    font-family:$primary-font;
+    src: url('#{$icomoon-font-path}/intro-demo/IntroDemo-BlackCaps.eot');
+    src: url('#{$icomoon-font-path}/intro-demo/IntroDemo-BlackCaps.eot?#iefix') format('embedded-opentype'),
+        url('#{$icomoon-font-path}/intro-demo/IntroDemo-BlackCaps.woff2') format('woff2'),
+        url('#{$icomoon-font-path}/intro-demo/IntroDemo-BlackCaps.woff') format('woff'),
+        url('#{$icomoon-font-path}/intro-demo/IntroDemo-BlackCaps.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: $secondary-font;
+    src: url('#{$icomoon-font-path}/avenir/Avenir-Black.eot');
+    src: url('#{$icomoon-font-path}/avenir/Avenir-Black.eot?#iefix') format('embedded-opentype'),
+        url('#{$icomoon-font-path}/avenir/Avenir-Black.woff2') format('woff2'),
+        url('#{$icomoon-font-path}/avenir/Avenir-Black.woff') format('woff'),
+        url('#{$icomoon-font-path}/avenir/Avenir-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $secondary-book-font;
+    src: url('#{$icomoon-font-path}/avenir/Avenir-BookOblique.eot');
+    src: url('#{$icomoon-font-path}/avenir/Avenir-BookOblique.eot?#iefix') format('embedded-opentype'),
+        url('#{$icomoon-font-path}/avenir/Avenir-BookOblique.woff2') format('woff2'),
+        url('#{$icomoon-font-path}/avenir/Avenir-BookOblique.woff') format('woff'),
+        url('#{$icomoon-font-path}/avenir/Avenir-BookOblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $secondary-font;
+    src: url('#{$icomoon-font-path}/avenir/Avenir-Heavy.eot');
+    src: url('#{$icomoon-font-path}/avenir/Avenir-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('#{$icomoon-font-path}/avenir/Avenir-Heavy.woff2') format('woff2'),
+        url('#{$icomoon-font-path}/avenir/Avenir-Heavy.woff') format('woff'),
+        url('#{$icomoon-font-path}/avenir/Avenir-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:$secondary-font;
+    src: url('#{$icomoon-font-path}/avenir/Avenir-Medium.eot');
+    src: url('#{$icomoon-font-path}/avenir/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('#{$icomoon-font-path}/avenir/Avenir-Medium.woff2') format('woff2'),
+        url('#{$icomoon-font-path}/avenir/Avenir-Medium.woff') format('woff'),
+        url('#{$icomoon-font-path}/avenir/Avenir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $secondary-next-font;
+    src: url('#{$icomoon-font-path}/avenir-next/AvenirNext-Regular.eot');
+    src: url('#{$icomoon-font-path}/avenir-next/AvenirNext-Regular.eot?#iefix') format('embedded-opentype'),
+        url('#{$icomoon-font-path}/avenir-next/AvenirNext-Regular.woff2') format('woff2'),
+        url('#{$icomoon-font-path}/avenir-next/AvenirNext-Regular.woff') format('woff'),
+        url('#{$icomoon-font-path}/avenir-next/AvenirNext-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family:$secondary-con-font;
+    src: url('#{$icomoon-font-path}/avenir-next-condensed/AvenirNextCondensed-Bold.eot');
+    src: url('#{$icomoon-font-path}/avenir-next-condensed/AvenirNextCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('#{$icomoon-font-path}/avenir-next-condensed/AvenirNextCondensed-Bold.woff2') format('woff2'),
+        url('#{$icomoon-font-path}/avenir-next-condensed/AvenirNextCondensed-Bold.woff') format('woff'),
+        url('#{$icomoon-font-path}/avenir-next-condensed/AvenirNextCondensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:$secondary-con-font;
+    src: url('#{$icomoon-font-path}/avenir-next-condensed/AvenirNextCondensed-Regular.eot');
+    src: url('#{$icomoon-font-path}/avenir-next-condensed/AvenirNextCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('#{$icomoon-font-path}/avenir-next-condensed/AvenirNextCondensed-Regular.woff2') format('woff2'),
+        url('#{$icomoon-font-path}/avenir-next-condensed/AvenirNextCondensed-Regular.woff') format('woff'),
+        url('#{$icomoon-font-path}/avenir-next-condensed/AvenirNextCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
