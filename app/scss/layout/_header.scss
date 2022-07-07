@@ -54,6 +54,12 @@ nav {
         font-weight: 500;
         position: relative;
         transform: translateY(-5rem);
+        @include breakpoint(ipad-land){
+            font-size:6rem;
+        }
+        @include breakpoint(mobile){
+            font-size:4.5rem;
+        }
     }
     .social{
         position: absolute;

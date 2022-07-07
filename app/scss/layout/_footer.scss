@@ -4,7 +4,16 @@ footer {
     .row {
         margin-bottom: unset!important;
         padding:  5.25rem 7rem !important;
+
+        @include breakpoint(ipad-land){
+            padding:  3.25rem 5rem !important;
+        }
+        @include breakpoint(mobile){
+            padding:  2rem 3rem !important;
+        }
+      
         .col {
+            margin-bottom: 3rem;
             h5 {
                 font-size: 2rem;
                 font-weight: 400;
@@ -28,6 +37,12 @@ footer {
                 display: flex;
                 flex-direction: column;
                 gap: 2.1rem;
+                @include breakpoint(ipad-land){
+                    gap: 1.7rem;
+                }
+                @include breakpoint(mobile){
+                    gap: 1.5rem;
+                }
 
                 li {
                     a {

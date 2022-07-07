@@ -6,16 +6,19 @@
     align-items: center;
     gap: 3.65rem;
     padding: 2.6rem 1.5rem 1.6rem 1.5rem !important;
+
     &-img {
       width: 10.85rem;
       object-fit: contain;
     }
+
     &-title {
       font-size: 2rem;
       line-height: 1.275;
       width: 16ch;
     }
   }
+
   &__desc {
     padding: 2.6rem 1.5rem 1.6rem 1.5rem !important;
     display: flex;
@@ -26,20 +29,24 @@
     background: linear-gradient(0deg,
         rgba(133, 209, 209, 1) 0%,
         rgba(255, 255, 255, 1) 100%);
+
     &-content {
       display: flex;
       flex-direction: column;
       justify-content: start;
       font-family: $secondary-con-font;
+
       h4 {
         font-size: 2.8rem;
         font-weight: 400;
       }
+
       h5 {
         font-size: 1.47rem;
         font-weight: 400;
         margin-bottom: 0.28rem;
       }
+
       span {
         font-family: $secondary-con-font;
         font-size: 1.2rem;
@@ -53,11 +60,13 @@
         font-weight: 400;
       }
     }
+
     &-img {
       margin-left: 2rem;
       width: 7rem;
       object-fit: contain;
     }
+
     &-info {
       font-size: 2rem;
       line-height: 1.275;
@@ -70,33 +79,40 @@
 .shop {
   padding: 7rem 0;
   background-image: url('#{$image-path}/shop/shop-bg.svg');
+
   &-container {
     padding: 0 6rem;
     gap: 2.8rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
     @include breakpoint(tablets) {
       padding: 0 5rem;
       gap: 4rem;
       grid-template-columns: 1fr 1fr 1fr;
     }
+
     @include breakpoint(mobile) {
       padding: 0 2rem;
       gap: 4rem;
       grid-template-columns: 1fr 1fr;
     }
+
     .card {
       aspect-ratio: 16/27;
+
       &-content {
         width: min-content;
         font-size: 2.1rem;
         line-height: 1;
         color: $pale-blue;
       }
+
       .text-white {
         color: $white-color;
       }
     }
   }
+
   &-btn {
     font-size: 1.25rem;
     background: transparent;
@@ -146,6 +162,13 @@
     max-height: 50rem;
     object-fit: contain;
     transform: translateY(-50%);
+
+    @include breakpoint(ipad-land){
+      max-height: 40rem;
+    }
+  @include breakpoint(mobile){
+    max-height: 35rem;
+  }
 
   }
 
@@ -197,43 +220,51 @@
   }
 
 }
-.new{
+
+.new {
   padding: 4.5rem 0 9rem 0;
-  &-container{
+
+  &-container {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 130rem;
     margin: 0 auto;
     gap: 4.2rem;
     padding: 0 9rem;
+
     @include breakpoint(desktop) {
       gap: 3rem;
       padding: 0 6rem;
     }
+
     @include breakpoint(ipad-land) {
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
       padding: 0 4rem;
     }
+
     @include breakpoint(mobile) {
       grid-template-columns: 1fr;
       gap: 2rem;
       padding: 0 2rem;
     }
-    .card{
+
+    .card {
       aspect-ratio: 13/16;
       max-width: 36rem;
-      &-content{
+
+      &-content {
         font-size: 3rem;
         line-height: 1;
         text-align: center;
         padding: 3rem !important;
         color: $shine-green;
         text-transform: uppercase;
-        
-    @include breakpoint(desktop) {
-      font-size: 2.5rem;
-    }
-        span{
+
+        @include breakpoint(desktop) {
+          font-size: 2.5rem;
+        }
+
+        span {
           font-size: 1.7rem;
           line-height: 1.58;
           padding: 0 1.05rem;
@@ -242,13 +273,15 @@
           display: inline-block;
           color: $white-color;
           background-color: $black-color;
+
           @include breakpoint(desktop) {
             font-size: 1.2rem;
-      
+
           }
         }
       }
-      &-footer{
+
+      &-footer {
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -258,28 +291,33 @@
         padding: 0.8rem 0;
         display: flex;
         flex-direction: column;
-align-items: center;  
-gap: 0.5rem; 
-p{font-size: 1.2rem;
-  line-height: 1.235;
-  text-align: center;
-  color: $black-color;
-}
-   }
+        align-items: center;
+        gap: 0.5rem;
+        p {
+          font-size: 1.2rem;
+          line-height: 1.235;
+          text-align: center;
+          color: $black-color;
+        }
+      }
     }
   }
 }
-.pain{
+
+.pain {
   padding: 8.5rem 0 6.8rem 0;
-  background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 39%, rgba(242,242,242,1) 100%);
-  &-container{
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 39%, rgba(242, 242, 242, 1) 100%);
+
+  &-container {
     grid-template-columns: 1fr 1fr 1fr;
+
     @include breakpoint(mobile) {
       grid-template-columns: 1fr 1fr;
       padding: 0 0.7rem;
       gap: 0.5rem;
     }
+
     @include breakpoint(ipad) {
       grid-template-columns: 1fr 1fr;
       padding: 0 2rem;
@@ -291,14 +329,27 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 39
     max-width: 115rem;
     margin: 0 auto;
     padding: 0 10rem;
-    .card{
+
+    .card {
       aspect-ratio: 1/1;
       border: 0.07rem solid rgba(112, 112, 112, 0.3);
-      &-footer{
+
+      &-footer {
         font-size: 2.6rem;
         line-height: 1.34;
         padding: 0 0 2.1rem 2.8rem;
         color: $white-color;
+        @include breakpoint(ipad-land) {
+          font-size: 2rem;
+          padding: 0 0 1.8rem 2.2rem;
+
+      }
+      @include breakpoint(mobile) {
+          font-size: 1.6rem;
+          padding: 0 0 1.5rem 1.8rem;
+
+      }
+
       }
     }
 
