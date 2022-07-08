@@ -4,6 +4,7 @@ nav {
     position: fixed;
     top: 0;
     z-index: 999;
+    // mix-blend-mode:soft-light;
     // background-color: rgba(88, 152, 49, 0.5);
     // background-color: rgba(53, 78, 37, 0.498);
     background-image: url("#{$image-path}/header-bg.svg");
