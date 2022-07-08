@@ -34,3 +34,28 @@
         }      
     }
 }
+
+
+.nav{
+    &-shop-btn{
+background-color: #097115;
+margin-right: 2rem;
+padding: 0.63rem 1.33rem 0.7rem 0.98rem;
+border-radius: 0.4rem;
+&:hover{
+    background-color: #43cc53e5;
+    color: black;
+}
+    }
+    &-sign-btn{
+background-color: #E2B00E;
+padding: 0.63rem 1.82rem 0.7rem 0.98rem;
+border-radius: 0.4rem;
+
+&:hover{
+    background-color: #ceaf4b;
+    color: black;
+}
+
+    }
+}
