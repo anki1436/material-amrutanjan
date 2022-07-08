@@ -22,6 +22,7 @@ footer {
                 margin-bottom: 2.1rem;
                 position: relative;
 
+
                 &::after {
                     content: "";
                     height: 1px;
@@ -137,5 +138,9 @@ cursor: pointer;
         justify-content: center;
         align-items: center;
         font-size: 1.75rem;
+        @include breakpoint(mobile){
+            font-size: 1.5rem;
+
+        }
     }
 }

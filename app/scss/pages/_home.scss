@@ -225,7 +225,9 @@
   padding: 4.5rem 0 9rem 0;
 
   &-container {
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
     max-width: 130rem;
     margin: 0 auto;
     gap: 4.2rem;
@@ -237,13 +239,13 @@
     }
 
     @include breakpoint(ipad-land) {
-      grid-template-columns: 1fr 1fr;
+      // grid-template-columns: 1fr 1fr;
       gap: 2rem;
       padding: 0 4rem;
     }
 
     @include breakpoint(mobile) {
-      grid-template-columns: 1fr;
+      // grid-template-columns: 1fr;
       gap: 2rem;
       padding: 0 2rem;
     }
@@ -251,6 +253,8 @@
     .card {
       aspect-ratio: 13/16;
       max-width: 36rem;
+      min-width: 30rem;
+      width: 100%;
 
       &-content {
         font-size: 3rem;

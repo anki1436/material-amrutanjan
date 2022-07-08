@@ -4,31 +4,63 @@ nav {
     position: fixed;
     top: 0;
     z-index: 999;
-    background-color: rgba(88, 152, 49, 0.5);
+    // background-color: rgba(88, 152, 49, 0.5);
+    // background-color: rgba(53, 78, 37, 0.498);
+    background-image: url("#{$image-path}/header-bg.svg");
+    background-color: unset;
+    box-shadow: none;
+
     .container {
         height: 100%;
     }
+
     .brand-logo {
-        height: 120px;
-        aspect-ratio: 1/1;
+        // height: 120px;
+        // aspect-ratio: 1/1;
         border-radius: 100%;
-        background-color: rgba(88, 152, 49, 0.5);
+        // background-color: rgba(53, 78, 37, 0.498 );
         display: flex;
         justify-content: center;
         align-items: center;
         top: 1.75rem;
         left: 0;
-        @include breakpoint(ipad-land){
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 130px;
+            width:130px;
+            background-color: rgba(53, 78, 37, 0.32 );
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) rotate(45deg);
+            z-index: -1;
+            border-radius: 50% 0 50% 0 ;
+            // background-image: url('#{$image-path}/svgviewer-output.svg');
+            // background-repeat: no-repeat;
+            // background-size: contain;
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+            // z-index: -1;
+            // width: 170px;
+            // height: 115px;
+        }
+
+        @include breakpoint(ipad-land) {
             top: 0;
             left: 50%;
             transform: translateX(-50%);
         }
+
         img {
-            height: 120px;
-            aspect-ratio: 1/1;
-            border-radius: 50%;
+            height: 98px;
+            width: 112px;
+            // aspect-ratio: 1/1;
+            // border-radius: 50%;
             object-fit: contain;
-                }
+        }
     }
 }
 
@@ -45,7 +77,7 @@ nav {
     position: relative;
     margin-bottom: 2.5rem;
 
-    h1{
+    h1 {
         font-size: 6.44rem;
         line-height: 1.111;
         width: 16ch;
@@ -54,30 +86,53 @@ nav {
         font-weight: 500;
         position: relative;
         transform: translateY(-5rem);
-        @include breakpoint(ipad-land){
-            font-size:6rem;
+
+        @include breakpoint(ipad-land) {
+            font-size: 6rem;
         }
-        @include breakpoint(mobile){
-            font-size:4.5rem;
+
+        @include breakpoint(mobile) {
+            font-size: 4.5rem;
         }
     }
-    .social{
+
+    .social {
         position: absolute;
         bottom: 1.68rem;
         right: 0;
         display: flex;
         align-items: center;
         gap: 3.5rem;
-        hr{
+
+        @include breakpoint(ipad-land) {
+            gap: 2.5rem;
+        }
+
+        @include breakpoint(mobile) {
+            gap: 1.75rem;
+        }
+
+        hr {
             width: 13.5rem;
             height: 0.2rem;
             color: $black-color;
             background: $black-color;
             border: none;
+
+            @include breakpoint(ipad-land) {
+                width: 9rem;
+            }
+
+            @include breakpoint(mobile) {
+                width: 6rem;
+            }
+
         }
-        a,i{
-            font-size:1.3rem;
-            
+
+        a,
+        i {
+            font-size: 1.3rem;
+
         }
     }
 }
